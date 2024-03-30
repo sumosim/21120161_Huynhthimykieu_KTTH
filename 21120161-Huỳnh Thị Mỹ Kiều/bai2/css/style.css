@@ -1,0 +1,397 @@
+:root{
+    --color-hong : #f195b2;
+    --color-xanh:#62c3e7;
+}
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none; 
+    list-style-type: none;
+    font-size: 20px;
+
+}
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+.container{
+    max-width: 1140px;
+}
+.header{
+    background-color: var(--color-hong);
+}
+.header-chinh{
+    display: flex;
+    
+    height: 100px;
+    color: white;
+    width: 1140px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;  
+}
+.header-trai{
+    display: flex;
+    margin-left: 70px;
+    margin-bottom: 40px;
+   
+}
+.header-phai{
+    margin-right: 70px;
+    margin-bottom: 40px;
+}
+.menu-icon{
+    display: flex;
+}
+
+.header-trai p{
+    margin-left: 20px;
+    
+}
+.header-trai p a{
+
+    color: white;
+}
+.menu-icon li{
+    margin-left: 30px;
+    color: white;
+}
+.menu-icon li a{
+   
+    color: white;
+}
+.nav{
+    position: relative;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 977px;
+    background-color: white;
+    height: 90px;
+    border-radius: 60px;
+    position: absolute;
+    top: -40px;
+    left: 18%;
+}
+.menu a{
+    color: black;
+}
+.menu-trai{
+    display: flex;
+    margin-left: 60px;
+}
+.menu-phai{
+    display: flex;
+    margin-right: 60px;
+}
+.menu-logo{
+
+}
+.menu-logo img{
+    height: 85px;
+    width: 200px;
+}
+.menu-trai li{
+    margin-left: 25px;
+    line-height: 90px;
+   
+}
+.menu-trai li a:hover{
+   color: var(--color-hong);
+   
+}
+.menu-phai li a:hover{
+    color: var(--color-hong);
+    
+ }
+.menu-phai li{
+    margin-left: 25px;
+    line-height: 90px;
+}
+
+/* section-one  */
+
+.section-one{
+    height: 900px;
+    background-image: url(../hinh/anh_kem/anh_kem/peakpx.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 900px;
+    
+    
+    
+}
+.info p{
+    margin-bottom: 20px;
+}
+.info-title{
+    font-size: 20px;
+    color: white;
+}
+.info-sub-title{
+    font-size: 72px;
+    color: white;
+    font-weight: 600;
+    font-style: bold;
+
+}
+.button{
+    width: 200px;
+    height: 60px;
+    background-color: var(--color-hong);
+    color: white;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #e67599;
+}
+
+
+
+
+
+/* section-two */
+.section-two{
+    background-color: white;
+}
+.container{
+    margin: 0 auto;
+}
+.section-two .content{
+    display: flex;
+
+}
+
+.section-two .title-chinh{
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    border-top:3px solid var(--color-hong) ;
+    margin-top: 90px;
+    margin-bottom: 90px;
+
+}
+.title-chinh .content{
+    
+}
+.content-trai{
+    width: 380px;
+    text-align: left;
+}
+.content-trai .title{
+    margin-bottom: 30px;
+}
+.content-phai{
+    width: 380px;
+    text-align: left;
+
+
+}
+.content-phai .title{
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+.content-trai .des{
+    margin-right: 30px;
+}
+.content-phai .check li{
+    margin-bottom: 20px;
+}
+.content-phai .check i{
+    margin-right: 20px;
+    color: var(--color-xanh);
+}
+.content-phai .des-1{
+    margin-left: 30px;
+}
+.content-img{
+    width: 350px;
+}
+.button-xanh{
+    width: 140px;
+    height: 45px;
+    background-color: var(--color-xanh);
+    margin-top: 30px;
+}
+.button-xanh:hover{
+   background-color: #4fbbe3;
+}
+.button-hong{
+    width: 140px;
+    height: 45px;
+    margin-left: 30px;
+}
+
+.content-img img{
+    
+    width: 350px;
+    height: 450px;
+    border-radius: 20px;
+}
+.content .sub-title{
+    color: gray;
+    margin-bottom: 30px;
+}
+.content .sub-title-2{
+    color: gray;
+}
+
+
+/* section tree  */
+
+.section-tree .chua{
+    margin-top: 100px;
+    display: flex;
+    height: 500px;
+    margin-bottom: 100px;
+}
+.section-tree .section-tree-img{
+    width: 100%;
+}
+.section-tree .section-tree-img img{
+    width: 100%;
+    height: 100%;
+}
+.section-tree .section-tree-content{
+    width: 100%;
+}
+.section-tree .section-tree-content{
+    text-align: center;
+    background-color: var(--color-hong);
+}
+.section-tree-content-money{
+    
+    
+   
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 100px;
+
+}
+.section-tree-content-money{
+    
+
+}
+.section-tree-content-money div{
+    width: 80px;
+    border-radius: 50%;
+    line-height: 80px;
+    color: var(--color-xanh);
+    background-color: white;
+    height: 80px;
+    display: block;
+}
+.section-tree-content-title{
+    margin-bottom: 30px;color: white;
+
+}
+.section-tree-content-sub-title{
+    margin-bottom: 30px;
+    color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.footer{
+    height: 500px;
+    width: 100%;
+   
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-logo img{
+    
+    width: 240px;
+    height: 120px;
+    text-align: center;
+
+
+}
+.footer-social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    
+}
+.footer-social i{
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    line-height: 45px;
+    color: var(--color-xanh);
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: 1px solid var(--color-xanh);
+}
+.footer-location{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.location-1{
+    border-right: 1px solid gray;
+}
+.location-1 h6{
+    text-align: right;
+    margin-right:35px ;
+    margin-bottom: 10px;
+}
+.location-1 p{
+    text-align: right;
+    margin-right:35px ;
+    margin-bottom: 10px;
+    color: #7a7a7a;
+
+
+}
+.location-2 h6{
+    text-align: left;
+    margin-left:35px ;
+    margin-bottom: 10px;
+
+
+}
+.location-2  p{
+    text-align: left;
+    margin-left:35px ;
+    margin-bottom: 10px;
+    color: #7a7a7a;
+
+
+}
+.footer-info{
+    text-align: center;
+    margin-top: 20px;
+    color: #7a7a7a;
+
+
+}
+.footer-info span{
+    
+    color: var(--color-hong);
+
+}

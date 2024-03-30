@@ -1,0 +1,55 @@
+.section-one{
+   
+    background-image: url(../hinh/anh_kem/anh_kem/background\ 9.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    
+}
+
+
+
+
+.info{
+    display: block ;
+}
+.info p{
+    margin-bottom: 65px;
+}
+.info-title{
+    font-size: 20px;
+    color: white;
+    
+}
+.info-sub-title{
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    font-style: bold;
+
+}
+.button{
+    width: 200px;
+    height: 60px;
+    background-color: var(--color-hong);
+    color: white;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #e67599;
+}
+/* CSS for product transition effect */
+.product {
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.1); /* Scale up the product on hover */
+}
+
+
+
+

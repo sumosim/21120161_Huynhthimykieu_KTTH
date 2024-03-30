@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<title>Đánh Giá </title> 
+   
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url(https://img.thuthuatphanmem.vn/uploads/2018/10/01/hinh-nen-mau-hong-cute-de-thuong_040307620.jpg);
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: center; /* Căn giữa hình ảnh */
+    }
+
+    .container {
+    width: 80%;
+    margin: auto;
+    color: rgb(236, 31, 31); /* Màu hồng */
+    font-weight: bold; /* In đậm cho tiêu đề */
+
+}
+
+
+    input[type="text"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #5644df;
+        box-sizing: border-box;
+        background-color: pink;
+
+    }
+
+    button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: pink;
+        color:black;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    .review {
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+
+    .review p {
+        margin: 0;
+    }
+</style>
+</head>   
+<body>
+
+<div class="container" >
+ <center>   <h1>Đánh Giá</h1></center>
+    <form id="reviewForm">
+        <input type="text" id="name" placeholder="Họ Và Tên" required><br>
+        <textarea id="content" placeholder="Nhập Đánh Giá" rows="4" required></textarea><br>
+        <input type="text" id="time" placeholder="Thời Gian" readonly><br>
+        <button type="submit">Gửi Đánh Giá</button> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+    </form>
+    <div id="reviews"></div>
+</div>
+
+<script>
+    document.getElementById("reviewForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        
+        var name = document.getElementById("name").value;
+        var content = document.getElementById("content").value;
+        var time = getCurrentTime();
+
+        var reviewDiv = document.createElement("div");
+        reviewDiv.classList.add("review");
+        reviewDiv.innerHTML = "<p><strong>@" + name + ": </strong>" + content + "<br><small>Thời Gian: " + time + "</small></p>";
+
+        document.getElementById("reviews").appendChild(reviewDiv);
+
+        // Clear input fields
+        document.getElementById("name").value = "";
+        document.getElementById("content").value = "";
+        document.getElementById("time").value = getCurrentTime();
+    });
+
+    function getCurrentTime() {
+        var date = new Date();
+        var hours = date.getHours();
+        var minutes = date.getMinutes();
+        var seconds = date.getSeconds();
+        var day = date.getDay();
+        var month = date.getMonth() + 1; // Month is 0-indexed, so add 1
+        var year = date.getFullYear();
+
+        // Add leading zero if single digit
+        hours = (hours < 10 ? "0" : "") + hours;
+        minutes = (minutes < 10 ? "0" : "") + minutes;
+        seconds = (seconds < 10 ? "0" : "") + seconds;
+
+        // Convert day to name
+        var days = ['Chủ Nhật', 'Thứ Hai', 'Thứ Ba', 'Thứ Tư', 'Thứ Năm', 'Thứ Sáu', 'Thứ Bảy'];
+        var dayName = days[day];
+var timeString = hours + ":" + minutes + ":" + seconds + ", " + dayName + ", " + date.getDate() + "/" + month + "/" + year;
+        return timeString;
+    }
+</script>
+</body>
+</html>
